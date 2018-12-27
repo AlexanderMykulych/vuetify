@@ -27,7 +27,7 @@ export default mixins(Measurable).extend({
         ? { paddingBottom: (1 / this.computedAspectRatio) * 100 + '%' }
         : undefined
     },
-    __cachedSizer (): VNode | never[] {
+    __cachedSizer (): VNode | undefined[] {
       if (!this.aspectStyle) return []
 
       return this.$createElement('div', {

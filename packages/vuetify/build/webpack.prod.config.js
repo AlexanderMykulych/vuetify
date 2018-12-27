@@ -38,7 +38,7 @@ module.exports = merge(baseWebpackConfig, {
   },
   plugins: [
     new ForkTsCheckerWebpackPlugin({
-      checkSyntacticErrors: true,
+      checkSyntacticErrors: false,
       tsconfig: resolve('../tsconfig.json')
     }),
     new HappyPack({
